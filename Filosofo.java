@@ -45,9 +45,9 @@ public class Filosofo implements Runnable {
     private void comer() throws InterruptedException {
         System.out.println("Filósofo " + id + " está comiendo...");
         Thread.sleep(random.nextInt(1000));
+        System.out.println("Filósofo " + id + " dejó comer.");
         tenedorDerecho.soltar();
         tenedorIzquierdo.soltar();
-        System.out.println("Filósofo " + id + " dejó comer.");
     }
 
 }
